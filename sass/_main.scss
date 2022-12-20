@@ -1,0 +1,56 @@
+.viajes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1%;
+    border: 5px solid goldenrod;
+    grid-area: imagen;
+}
+.viajesp:hover{
+    transform: scale(1.2);
+}
+img{
+    width: 15%;
+}
+.titulo{
+    padding-top: 10px;
+    display: grid;
+    justify-content: center;
+    border-radius: 2px;
+    font-family: russianserif;
+}    
+main{
+    grid-area: viajes;
+}
+.viajesp{
+    background-color: #9c7b4e;
+    width: 16%;
+    border: 10px solid black;
+    grid-area: texto;
+    transition: 0,5s;
+    object-fit: cover;
+}
+.jaen{
+    width: 300px;
+    padding-left: 2%;
+}
+.sintra{
+    width: 300px;
+    padding-left: 2%;
+}
+.almeria{
+    width: 300px;
+    padding-left: 2%;
+}
+.tanger{
+    width: 300px;
+    padding-left: 2%;
+}
+.santiago{
+    width: 300px;
+    padding-left: 2%;
+}
+#formulario{
+    background-color: #9c7b4e;
+    display:flex ;
+}

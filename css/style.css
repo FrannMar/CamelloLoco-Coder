@@ -1,0 +1,156 @@
+@font-face {
+  font-family: russianserif;
+  src: url(../fonts/russone-regular.ttf);
+}
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background-color: #9c7b4e;
+  font-family: sans-serif;
+  width: auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  grid-template-rows: 140px;
+  background-color: #9c7b4e;
+  border: 4px solid goldenrod;
+  grid-area: nav;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  border: 5px solid goldenrod;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav li a:hover {
+  background-color: white;
+  color: black;
+}
+nav li {
+  list-style-type: none;
+}
+nav li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.banderas {
+  width: 70vh;
+}
+
+.icono {
+  width: 118px;
+}
+
+p {
+  color: black;
+}
+
+.viajes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1%;
+  border: 5px solid goldenrod;
+  grid-area: imagen;
+}
+
+.viajesp:hover {
+  transform: scale(1.2);
+}
+
+img {
+  width: 15%;
+}
+
+.titulo {
+  padding-top: 10px;
+  display: grid;
+  justify-content: center;
+  border-radius: 2px;
+  font-family: russianserif;
+}
+
+main {
+  grid-area: viajes;
+}
+
+.viajesp {
+  background-color: #9c7b4e;
+  width: 16%;
+  border: 10px solid black;
+  grid-area: texto;
+  transition: 0, 5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.jaen {
+  width: 300px;
+  padding-left: 2%;
+}
+
+.sintra {
+  width: 300px;
+  padding-left: 2%;
+}
+
+.almeria {
+  width: 300px;
+  padding-left: 2%;
+}
+
+.tanger {
+  width: 300px;
+  padding-left: 2%;
+}
+
+.santiago {
+  width: 300px;
+  padding-left: 2%;
+}
+
+#formulario {
+  background-color: #9c7b4e;
+  display: flex;
+}
+
+footer {
+  background-color: #bfb1a8;
+  display: flex;
+  flex-direction: row;
+  grid-area: pie;
+  width: 100%;
+}
+
+@media screen and (min-width: 512px) and (max-width: 968px) {
+  body {
+    display: grid;
+    grid-template-areas: "nav" "viajes" "pie";
+    margin: 0%;
+    padding: 0%;
+  }
+  .titulo {
+    justify-content: start;
+  }
+  .viajes {
+    display: flex;
+    flex-direction: column;
+  }
+  .banderas {
+    display: grid;
+    align-items: flex-start;
+  }
+}/*# sourceMappingURL=style.css.map */

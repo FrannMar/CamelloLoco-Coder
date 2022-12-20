@@ -1,0 +1,22 @@
+@media screen and (min-width: 512px) and (max-width: 968px){
+    body{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "viajes"
+    "pie";
+    margin: 0%;
+    padding: 0%;
+}
+.titulo{
+    justify-content: start;
+}
+.viajes{
+    display: flex;
+    flex-direction: column;
+}
+.banderas{
+    display: grid;
+    align-items: flex-start;
+}
+}

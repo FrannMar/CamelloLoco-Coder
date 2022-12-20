@@ -1,0 +1,13 @@
+
+$animal:gato;
+p{
+    @if $animal == perro {
+        color: aqua;
+    }
+    @else if $animal == jirafa {
+        color: green;
+    }
+    @else {
+        color: black;
+    }
+}
